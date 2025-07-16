@@ -2,7 +2,11 @@ import { Link, useLocation } from "wouter";
 import { cn } from "@/lib/utils";
 import { useAuth } from "@/hooks/use-auth";
 import { Button } from "@/components/ui/button";
+<<<<<<< HEAD
 
+=======
+import Image from "next/image";
+>>>>>>> bd4d2d0d7f568bb833ebabeff6c1a4a8b08f130a
 import {
   BarChart3,
   FolderOpen,
@@ -103,6 +107,7 @@ export function Sidebar({
           )}
         >
           {isCollapsed ? (
+<<<<<<< HEAD
             <div className="w-16 h-16 flex items-center justify-center">
               <BarChart3 className="h-14 w-14 text-blue-600" />
             </div>
@@ -113,6 +118,26 @@ export function Sidebar({
                 Project Review
               </h1>
               <p className="text-lg text-gray-500">Management Tool</p>
+=======
+            <div className="w-10 h-10 relative">
+              <Image
+                src="/reflections-logo-icon.png"
+                alt="Reflections"
+                fill
+                className="object-contain"
+                priority
+              />
+            </div>
+          ) : (
+            <div className="w-full h-16 relative mt-4">
+              <Image
+                src="/reflections-logo-full.png"
+                alt="Reflections"
+                fill
+                className="object-contain"
+                priority
+              />
+>>>>>>> bd4d2d0d7f568bb833ebabeff6c1a4a8b08f130a
             </div>
           )}
 
@@ -167,7 +192,13 @@ export function Sidebar({
                       isActive ? "text-primary" : "text-gray-500"
                     )}
                   />
+<<<<<<< HEAD
                   {!isCollapsed && <span className="text-sm">{item.name}</span>}
+=======
+                  {!isCollapsed && (
+                    <span className="text-sm">{item.name}</span>
+                  )}
+>>>>>>> bd4d2d0d7f568bb833ebabeff6c1a4a8b08f130a
                 </div>
               </Link>
             );
@@ -196,4 +227,8 @@ export function Sidebar({
       </div>
     </>
   );
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> bd4d2d0d7f568bb833ebabeff6c1a4a8b08f130a

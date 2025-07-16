@@ -72,6 +72,7 @@ export function Navbar({ onSidebarToggle }: NavbarProps) {
               <Menu className="h-5 w-5" />
             </Button>
 
+<<<<<<< HEAD
             {/* Reflections logo */}
             <Link href="/" className="flex items-center">
               <div className="flex-shrink-0 flex items-center">
@@ -82,6 +83,18 @@ export function Navbar({ onSidebarToggle }: NavbarProps) {
                   style={{ objectFit: "contain" }}
                   loading="eager"
                 />
+=======
+            {/* Logo and app name */}
+            <Link href="/" className="flex items-center">
+              <div className="flex-shrink-0 flex items-center">
+                <BarChart3 className="h-8 w-8 text-blue-600" />
+              </div>
+              <div className="ml-3 hidden md:block">
+                <h1 className="text-xl font-bold text-gray-900">
+                  Project Review
+                </h1>
+                <p className="text-xs text-gray-500">Management Tool</p>
+>>>>>>> bd4d2d0d7f568bb833ebabeff6c1a4a8b08f130a
               </div>
             </Link>
           </div>
